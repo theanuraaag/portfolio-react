@@ -4,11 +4,11 @@ import ProgressBar from './ProgressBar';
 const Skill = () => {
     const [activeTab, setActiveTab] = useState("experience");
     return (
-        <div className='border-2 border-blue-500 py-20'>
+        <div className='py-20'>
             {/* left  */}
             <div className='flex flex-col lg:flex-row lg:px-30 gap-5'>
-                <div className='lg:w-1/2 p-6 border-2'>
-                    <h2 className='text-5xl font-bold mb-12 border-2'>Skills & Experience</h2>
+                <div className='lg:w-1/2 p-6 '>
+                    <h2 className='text-5xl font-bold mb-12'>Skills & Experience</h2>
                     <p className='mb-4 text-[#5A5A5A]'>My name is Anurag Bhardwaj, and I am a passionate web developer with experience building responsive and user-centric applications. With a solid foundation in computer science through my B.Tech from DTU, combined with three web development internships, I&apos;ve honed my ability to craft intuitive digital experiences.</p>
                     <p className='mb-4 text-[#5A5A5A]'>I specialize in frontend development using React.js, and I have practical knowledge of full stack technologies including Node.js, Express, and MongoDB. I&apos;ve worked with real-time databases and authentication using Firebase, and I enjoy styling interfaces with Tailwind CSS to create clean, modern UI designs.</p>
                     <p className='mb-4 text-[#5A5A5A]'>My core focus is to develop high-performance, dynamic web applications that deliver value to users. From building a Notes App with login functionality to creating a customizable ID Card Generator, I approach every project with creativity, scalability, and usability in mind.</p>
@@ -20,7 +20,7 @@ const Skill = () => {
                 {/* right  */}
                 <div className='lg:w-1/2 p-6'>
                     {/* right top  */}
-                    <div className='border-2 border-green-500'>
+                    <div className=''>
                         <div className='flex rounded-xl border-2 border-[#6244C5] text-xl'>
                             <button className={`py-3 w-1/2 rounded-xl transition-all 
                         ${activeTab === 'experience'

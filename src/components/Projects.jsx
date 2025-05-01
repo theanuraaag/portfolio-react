@@ -1,58 +1,28 @@
 import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
-import CardImg from "../assets/about-1.webp"
+import IDCard from "../assets/id-card-generator.png"
+import NotesApp from "../assets/notes-app.png"
+import TicTacToe from "../assets/tic-tac-toe.png"
 
 const projects = [
     {
         id: 1,
-        title: "Notes App",
-        image: CardImg,
+        title: "ID Card Generator",
+        image: IDCard,
+        live: "https://id-card-generator-react.netlify.app/",
+        code: "https://github.com/theanuraaag/id-card-generator",
     },
     {
         id: 2,
-        title: "ID Card Generator",
-        image: CardImg,
+        title: "Notes App",
+        image: NotesApp,
     },
     {
         id: 3,
         title: "Multiplayer Tic Tac Toe",
-        image: CardImg,
+        image: TicTacToe,
     },
-    {
-        id: 4,
-        title: "Multiplayer Tic Tac Toe",
-        image: CardImg,
-    },
-    {
-        id: 5,
-        title: "Multiplayer Tic Tac Toe",
-        image: CardImg,
-    },
-    {
-        id: 6,
-        title: "Multiplayer Tic Tac Toe",
-        image: CardImg,
-    },
-    {
-        id: 7,
-        title: "Multiplayer Tic Tac Toe",
-        image: CardImg,
-    },
-    {
-        id: 8,
-        title: "Multiplayer Tic Tac Toe",
-        image: CardImg,
-    },
-    {
-        id: 9,
-        title: "Multiplayer Tic Tac Toe",
-        image: CardImg,
-    },
-    {
-        id: 10,
-        title: "Multiplayer Tic Tac Toe",
-        image: CardImg,
-    },
+   
 ];
 
 const Projects = () => {
@@ -67,7 +37,7 @@ const Projects = () => {
 
 
     return (
-        <div className='border-2 border-yellow-500 py-20'>
+        <div className='py-10'>
             {/* container */}
             <div className='lg:px-30'>
                 {/* title  */}
@@ -87,6 +57,9 @@ const Projects = () => {
                         key={project.id}
                         image={project.image}
                         title={project.title}
+                        live={project.live}
+                        code={project.code}
+                        
                     />)}
                 </div>
                 <div className='flex justify-center mb-10 '>

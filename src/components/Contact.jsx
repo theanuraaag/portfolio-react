@@ -1,5 +1,8 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import { FaSquareTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -21,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='border-2 border-gray-500 px-20'>
+    <div className=' px-20 py-10'>
       <div className='flex mx-10 justify-between items-center my-10'>
         <h1 className='text-5xl font-bold'>Let's Work Together</h1>
         <button className='bg-[#6244C5] text-white font-normal text-base py-4 px-6 rounded-md hover:bg-[#6958a2]'>Say Hello</button>
@@ -31,6 +34,18 @@ const Contact = () => {
           <div>
             <p className='text-gray-600'>Email:</p>
             <p className='text-2xl'>theanuraaag@gmail.com</p>
+          </div>
+          <div className='mt-6'>
+            <p className='text-gray-600'>Follow me :</p>
+            <div className='flex text-4xl text-[#6244C5]'>
+              <a href="https://www.linkedin.com/in/theanuraaag/" target='_blank'>
+                <FaLinkedin />
+              </a>
+              <a href="https://github.com/theanuraaag" target='_blank'> <FaGithubSquare />
+              </a>
+
+            </div>
+
           </div>
         </div>
         <form className="mx-10 space-y-4 w-3/5" onSubmit={handleSubmit}>

@@ -1,9 +1,10 @@
 import React from 'react'
-import AboutImg from "../assets/about-1.webp"
+import AboutImg from "../assets/about1.jpg"
+import AboutImg2 from "../assets/about2.jpg"
 
 const About = () => {
     return (
-        <div className='border-2 border-green-600 flex flex-col lg:flex-row my-20'>
+        <div className=' flex flex-col lg:flex-row my-20'>
             {/* left side  */}
             <div className='w-full lg:w-1/2 p-6 lg:pl-30'>
                 <div className='flex mb-5'>
@@ -38,7 +39,7 @@ const About = () => {
             <div className='w-full lg:w-1/2 p-6 lg:pr-30'>
                 <div className='flex flex-col md:flex-row gap-5 mb-6'>
                     <img src={AboutImg} className='w-full md:w-1/2 rounded-2xl' alt="" />
-                    <img src={AboutImg} className='w-full md:w-1/2 rounded-2xl' alt="" />
+                    <img src={AboutImg2} className='w-full md:w-1/2 rounded-2xl' alt="" />
                 </div>
                 <div className='text-xl font-semibold mb-2'>Projects Completed</div>
                 <p className='mb-4 text-[#5A5A5A]'>Throughout my academic journey and web development internships, I&apos;ve built and contributed to over 15 projects — from dynamic single-page apps to full-stack platforms. These include tools like a Notes App, a Multiplayer Tic-tac-toe game, and an ID Card Generator with customization features.
